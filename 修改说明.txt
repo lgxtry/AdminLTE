@@ -1,0 +1,14 @@
+根目录新增index_iframe.html文件。框架首页文件
+-body 的样式增加fixed,默认为固定框架
+新增dist/css/tabiframe.css文件，tab菜单样式文件
+新增dist/js/app_iframe.js文件，tab的控制脚本文件
+新增dist/img/loading文件夹
+
+//主页页面要设置路径
+App.setbasePath("/adminlte/");
+App.setGlobalImgPath("dist/img/");
+
+
+
+//iframe框的高度控制
+app_iframe.js文件handleIframeContent方法,里面会计算页头、页脚的高度
